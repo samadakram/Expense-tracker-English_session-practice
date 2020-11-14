@@ -8,3 +8,5 @@ const initialState = {
         {id: 4, descrition: "Expense 1", transactionAmount: -500}
     ]
 }
+
+export const GlobalContext = createContext(initialState);
