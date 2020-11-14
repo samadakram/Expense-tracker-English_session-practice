@@ -23,6 +23,9 @@ export const AddTransaction = ()=> {
                             placeholder="Enter Transaction amount"
                     />
                 </div>
+                <button className="btn">
+                    Add Transaction
+                </button>
             </form>
         </div>
     );
