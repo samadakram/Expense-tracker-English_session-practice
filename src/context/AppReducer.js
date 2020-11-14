@@ -1,5 +1,5 @@
 export default (state, action) =>{
-    switch(acttion.type){
+    switch(action.type){
         default:
             return state;
     }
