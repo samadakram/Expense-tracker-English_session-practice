@@ -11,13 +11,13 @@ const initialState = {
 
 export const GlobalContext = createContext(initialState);
 
-export const GlobalProvider = ()=> {
+export const GlobalProvider = ({children})=> {
 
     return(
         <GlobalContext.Provider value={{
             transactions: state.transactionAmount
         }}>
-
+            {children}
         </GlobalContext.Provider>
     );
 }
