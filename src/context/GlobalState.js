@@ -10,3 +10,8 @@ const initialState = {
 }
 
 export const GlobalContext = createContext(initialState);
+
+export const GlobalProvider = ()=> {
+
+    return();
+}
