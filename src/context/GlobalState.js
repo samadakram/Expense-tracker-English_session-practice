@@ -13,5 +13,11 @@ export const GlobalContext = createContext(initialState);
 
 export const GlobalProvider = ()=> {
 
-    return();
+    return(
+        <GlobalContext.Provider value={{
+            transactions: state.transactionAmount
+        }}>
+
+        </GlobalContext.Provider>
+    );
 }
