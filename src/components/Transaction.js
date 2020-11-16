@@ -5,7 +5,7 @@ export const Transaction = () => {
         <div>
             <li className="plus">
                 Project 1 Income
-                <span>%1,000</span>
+                <span>$1,000</span>
                 <button className="delete-btn">X</button>
             </li>
         </div>
