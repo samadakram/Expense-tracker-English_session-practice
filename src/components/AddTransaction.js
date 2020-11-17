@@ -8,10 +8,14 @@ export const AddTransaction = ()=> {
 
     const { addTransaction } = useContext(GlobalContext);
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return(
         <div>
             <h3>Add New Transaction</h3>
-            <form>
+            <form onSubmit={onSubmit}>
                 <div className="form-control">
                     <label htmlFor="description">
                         Description
