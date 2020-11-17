@@ -8,5 +8,14 @@ const initialState = {
         {id: 4, text: 'Camera', amount: 150}
     ]
 }
+ //create Context
+export const GlobalContext = createContext(initialState);
 
-export const GlobalState = createContext(initialState);
+// Provider component
+export const GlobalProvider = ({children})=> {
+    const [state, dispatch] = useReducer(AppReducer, initialState);
+
+    return(<GlobalContext.Provider>
+        
+    </GlobalContext.Provider>);
+}
